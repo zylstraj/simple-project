@@ -1,0 +1,40 @@
+body {
+  font-size: 1em;
+}
+img {
+  width: 100%;
+}
+ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+h3 {
+  text-align: center;
+}
+section p {
+  text-align: center;
+}
+.contact_p {
+  text-align: center;
+}
+footer {
+  clear: both;
+}
+@media(min-width: 768px) {
+.portfolio_projects {
+  width: 48%;
+  margin: 1%;
+  float: left;
+}
+}
