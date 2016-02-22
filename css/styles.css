@@ -1,16 +1,11 @@
+/* Base Styles */
 body {
   font-size: 1em;
+  background-color: #E8E8E8;
+  font-family: 'Oswald', sans-serif;
 }
 img {
   width: 100%;
-}
-ul li {
-  list-style-type: none;
-  text-transform: uppercase;
-  text-align: center;
-}
-a {
-  text-decoration: none;
 }
 h1 {
   text-align: center;
@@ -18,9 +13,27 @@ h1 {
 h2 {
   text-align: center;
   text-transform: uppercase;
+  padding-top: 2em;
 }
 h3 {
   text-align: center;
+}
+/* Nav List */
+ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+/* Main Portfolio Section */
+.main_sections {
+  clear: both;
 }
 section p {
   text-align: center;
@@ -28,13 +41,77 @@ section p {
 .contact_p {
   text-align: center;
 }
+/* Footer and Bottom Bar */
 footer {
   clear: both;
 }
-@media(min-width: 768px) {
-.portfolio_projects {
-  width: 48%;
-  margin: 1%;
+.nav_bottom {
+  display: none;
+  width: 25%;
+  float: right;
+}
+.mobile_bottom {
+  width: 67%;
+  padding-left: 3%;
   float: left;
 }
+.link_top {
+  width: 25%;
+  float: right;
+  padding-left: 5%;
+}
+@media(min-width: 768px) {
+/* Portfolio Work Organization */
+.portfolio_projects {
+  width: 47%;
+  margin: 0 1%;
+  float: left;
+  padding-bottom: 4em;
+}
+ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+ul {
+  text-align: center;
+}
+.portfolio_photo {
+  width: 40%;
+  float: right;
+  padding-right: 2%;
+}
+.portfolio_info {
+  width: 55%;
+  float: left;
+}
+/* Bottom Footer - Hiding and Redisplaying Different Bottom Nav */
+.link_top {
+  display: none;
+}
+.mobile_bottom {
+  width: 40%;
+}
+.nav_bottom {
+  display: inline-block;
+  width: 50%;
+}
+
+}
+@media(min-width: 1024px){
+  .portfolio_projects {
+    width: 30%;
+    margin: 0 1%;
+  }
+  .portfolio_photo {
+    padding-right: 5%;
+  }
+  .josh_site {
+    float: left;
+    width: 50%;
+  }
+  .nav_site {
+    float: right;
+    width: 45%;
+    padding-top: 1em;
+  }
 }
